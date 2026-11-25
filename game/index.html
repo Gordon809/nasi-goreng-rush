@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Nasi Goreng Rush — Warung Cepat Saji</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #173b38; }
+  body { display: flex; flex-direction: column; align-items: center; min-height: 100vh; font-family: system-ui, sans-serif; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #f3e2c7; }
+  #hint { color: #cfe3d8; text-align: center; font-size: 14px; padding: 10px 16px; line-height: 1.5; }
+  #hint b { color: #f2c94c; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">
+    <b>Klik bahan (1-8)</b> untuk memotong &amp; memasak &nbsp;•&nbsp; <b>Klik wajan</b> saat matang untuk menata &nbsp;•&nbsp;
+    <b>Klik piring</b> lalu <b>jendela serve / Spasi</b> untuk mengantar &nbsp;•&nbsp; <b>P</b> jeda &nbsp;•&nbsp; <b>M</b> bisu
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
